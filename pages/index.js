@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import styles from "../styles/home.module.css";
 import Header from "../components/layout/header";
 import Footer from "../components/layout/footer";
 import Catalog from "../components/catalog";
