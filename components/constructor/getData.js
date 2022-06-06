@@ -3,7 +3,7 @@ import axios from "axios";
 
 let dataUrl = "/data/miista-export.json";
 
-export let getData = () => {
+export let GetData = () => {
 	let [data, setData] = useState();
 
 	useEffect(() => {
@@ -17,7 +17,7 @@ export let getData = () => {
 			});
 	}, []);
 
-	useDebugValue(data ? "data" : "no data");
+	// useDebugValue(data ? "data" : "no data");
 
 	return data;
 };
