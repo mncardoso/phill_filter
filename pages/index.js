@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
-
+import styles from "../styles/home.module.css";
 import Header from "../components/layout/header";
 import Footer from "../components/layout/footer";
-import styles from "../styles/home.module.css";
 import Catalog from "../components/catalog";
 import { Menu } from "../components/layout/menu";
 import { MenuFilter } from "../components/layout/menuFilter";
-
 import { GetData } from "../components/constructor/getData";
 import { parseData } from "../components/constructor/parseData";
 import { uniqueData } from "../components/constructor/uniqueData";
@@ -103,7 +101,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Header />
-			<div className={styles.catalog}>
+			<div className="catalog">
 				{dataUnique ? <Menu data={dataUnique} /> : <></>}
 				{filterState ? <MenuFilter data={dataUnique} /> : <></>}
 				{dataParsed ? (

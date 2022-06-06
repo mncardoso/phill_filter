@@ -122,3 +122,10 @@ a:active {
 	align-items: center;
 	width: 100vw;
 }
+
+.catalog {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	padding: 60px;
+}
