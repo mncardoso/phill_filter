@@ -1,0 +1,80 @@
+.header {
+	display: flex;
+	background-image: url(/images/miista_header_bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 34.563rem;
+	width: 100%;
+	z-index: -1;
+}
+
+.header__menu {
+	position: fixed;
+	top: 0;
+	align-self: start;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 3.75rem;
+	color: var(--color-text-alt);
+	transition: all 0.15s ease-in-out;
+}
+
+.header__menu ul {
+	display: flex;
+	text-transform: uppercase;
+	list-style: none;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 2px;
+	gap: 2.188rem;
+}
+
+.header__menu a:link,
+.header__menu a:visited {
+	color: var(--color-text-alt);
+}
+
+.header__menu a:hover,
+.header__menu a:active {
+	color: var(--color-text-alt);
+	text-decoration: none;
+	text-shadow: 0px 0px 4px var(--color-text-alt);
+	cursor: pointer;
+}
+
+.header__menu__color {
+	background-color: var(--color-secondary);
+	color: var(--color-text);
+}
+
+.header__menu__color svg {
+	fill: var(--color-text);
+}
+
+.header__menu__color a:link,
+.header__menu__color a:visited {
+	color: var(--color-text);
+}
+
+.header__menu__color a:hover,
+.header__menu__color a:active {
+	color: var(--color-text);
+	text-shadow: 0px 0px 2px var(--color-text);
+	cursor: pointer;
+}
+
+.header__menu__user ul {
+	gap: 0.813rem;
+}
+
+/* .header__logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+} */
